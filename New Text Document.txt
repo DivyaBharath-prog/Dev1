@@ -1,0 +1,162 @@
+VVCE@DESKTOP-DKVJCL2 MINGW64 ~
+$ pwd
+/c/Users/VVCE
+
+VVCE@DESKTOP-DKVJCL2 MINGW64 ~
+$ cd D:/
+
+VVCE@DESKTOP-DKVJCL2 MINGW64 /d
+$ cd Devops
+
+VVCE@DESKTOP-DKVJCL2 MINGW64 /d/Devops
+$ ^C
+
+VVCE@DESKTOP-DKVJCL2 MINGW64 /d/Devops
+$ git init
+Initialized empty Git repository in D:/Devops/.git/
+
+VVCE@DESKTOP-DKVJCL2 MINGW64 /d/Devops (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        text1.txt
+        text2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+VVCE@DESKTOP-DKVJCL2 MINGW64 /d/Devops (master)
+$ git add .
+
+VVCE@DESKTOP-DKVJCL2 MINGW64 /d/Devops (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   text1.txt
+        new file:   text2.txt
+
+
+VVCE@DESKTOP-DKVJCL2 MINGW64 /d/Devops (master)
+$ git commit -m "firts file"
+[master (root-commit) 1a0c97f] firts file
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 text1.txt
+ create mode 100644 text2.txt
+
+VVCE@DESKTOP-DKVJCL2 MINGW64 /d/Devops (master)
+$ git remote add DivyaBharath-prog 'https://github.com/DivyaBharath-prog/pr1.git'
+
+VVCE@DESKTOP-DKVJCL2 MINGW64 /d/Devops (master)
+$ git push -u DivyaBharath-prog master
+:wq
+wq
+wq
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 223 bytes | 44.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/DivyaBharath-prog/pr1/pull/new/master
+remote:
+To https://github.com/DivyaBharath-prog/pr1.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'DivyaBharath-prog/master'.
+
+VVCE@DESKTOP-DKVJCL2 MINGW64 /d/Devops (master)
+$ git pull DivyaBharath-prog Firstproject file1
+fatal: couldn't find remote ref Firstproject
+
+VVCE@DESKTOP-DKVJCL2 MINGW64 /d/Devops (master)
+$ ls
+text1.txt  text2.txt
+
+VVCE@DESKTOP-DKVJCL2 MINGW64 /d/Devops (master)
+$ git checkout -b fix-typo-readme
+Switched to a new branch 'fix-typo-readme'
+
+VVCE@DESKTOP-DKVJCL2 MINGW64 /d/Devops (fix-typo-readme)
+$ git add .
+
+VVCE@DESKTOP-DKVJCL2 MINGW64 /d/Devops (fix-typo-readme)
+$ git status
+On branch fix-typo-readme
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   text1.txt
+
+
+VVCE@DESKTOP-DKVJCL2 MINGW64 /d/Devops (fix-typo-readme)
+$ git commit -m "second time"
+[fix-typo-readme 4f7f6bd] second time
+ 1 file changed, 1 insertion(+)
+
+VVCE@DESKTOP-DKVJCL2 MINGW64 /d/Devops (fix-typo-readme)
+$ git status
+On branch fix-typo-readme
+nothing to commit, working tree clean
+
+VVCE@DESKTOP-DKVJCL2 MINGW64 /d/Devops (fix-typo-readme)
+$ git push -u DivyaBharath-prog master
+Everything up-to-date
+branch 'master' set up to track 'DivyaBharath-prog/master'.
+
+VVCE@DESKTOP-DKVJCL2 MINGW64 /d/Devops (fix-typo-readme)
+$ git remote add DivyaBharath-prog 'https://github.com/DivyaBharath-prog/pr1.git'
+error: remote DivyaBharath-prog already exists.
+
+VVCE@DESKTOP-DKVJCL2 MINGW64 /d/Devops (fix-typo-readme)
+$ git checkout -b master
+fatal: a branch named 'master' already exists
+
+VVCE@DESKTOP-DKVJCL2 MINGW64 /d/Devops (fix-typo-readme)
+$ git branch -m master main
+
+VVCE@DESKTOP-DKVJCL2 MINGW64 /d/Devops (fix-typo-readme)
+$ git clone https://github.com/DivyaBharath-prog/pr1.git
+Cloning into 'pr1'...
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 9 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (9/9), done.
+
+VVCE@DESKTOP-DKVJCL2 MINGW64 /d/Devops (fix-typo-readme)
+$ cd pr1
+
+VVCE@DESKTOP-DKVJCL2 MINGW64 /d/Devops/pr1 (main)
+$ ls
+README.md
+
+VVCE@DESKTOP-DKVJCL2 MINGW64 /d/Devops/pr1 (main)
+$ git checkout -b fix-typo-readme
+Switched to a new branch 'fix-typo-readme'
+
+VVCE@DESKTOP-DKVJCL2 MINGW64 /d/Devops/pr1 (fix-typo-readme)
+$ git status
+On branch fix-typo-readme
+nothing to commit, working tree clean
+
+VVCE@DESKTOP-DKVJCL2 MINGW64 /d/Devops/pr1 (fix-typo-readme)
+$ vim readme.d
+
+VVCE@DESKTOP-DKVJCL2 MINGW64 /d/Devops/pr1 (fix-typo-readme)
+$ git status
+On branch fix-typo-readme
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        readme.d
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+VVCE@DESKTOP-DKVJCL2 MINGW64 /d/Devops/pr1 (fix-typo-readme)
+$
